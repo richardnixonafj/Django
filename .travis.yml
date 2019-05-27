@@ -5,11 +5,6 @@ sudo: true
 python:
   - 3.6
 
-services:
-  postgresql
-addons:
-  postgresql: '9.5'
-
 env:
   global:
     - PIPENV_VENV_IN_PROJECT=1
@@ -19,12 +14,7 @@ install:
   - pip install pipenv
   - pipenv sync -d
 
-before_script:
-  - psql -c "CREATE DATABASE testdb;" -U postgres
-
 script:
   - pipenv run flake8 .
-  - pipenv run pytest --cov=pypro
 
-after_success:
-- pipenv run codecov
+
