@@ -18,7 +18,6 @@ env:
 install:
   - pip install pipenv
   - pipenv sync -d
-  - cp contrib/env-sample .env
 
 before_script:
   - psql -c "CREATE DATABASE testdb;" -U postgres
