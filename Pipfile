@@ -5,10 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
+pytest-django = "*"
+v = {editable = true,version = "*"}
 
 [packages]
 django = "*"
 gunicorn = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.6"
