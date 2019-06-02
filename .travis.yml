@@ -3,7 +3,7 @@ dist: xenial
 sudo: true
 
 python:
-  - 3.6
+  - 3.6.5
 
 env:
   global:
@@ -17,5 +17,3 @@ install:
 script:
   - pipenv run flake8 .
   - pipenv run pytest
-
-
