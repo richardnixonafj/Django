@@ -7,6 +7,8 @@ verify_ssl = true
 flake8 = "*"
 pytest-django = "*"
 v = {editable = true,version = "*"}
+pytest-cov = "*"
+codecov = "*"
 
 [packages]
 django = "*"
