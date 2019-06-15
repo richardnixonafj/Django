@@ -16,6 +16,7 @@ gunicorn = "*"
 pytest-django = "*"
 python-decouple = "*"
 psycopg2-binary = "*"
+dj-database-url = "*"
 
 [requires]
 python_version = "3.6"
